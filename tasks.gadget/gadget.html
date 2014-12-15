@@ -1,0 +1,19 @@
+<html> 
+<head> 
+<title>Tasks</title> 
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.8.0.min.js" language="javascript" type="text/javascript"></script>
+<script src="js/script.js" language="javascript" type="text/javascript"></script>
+
+</head> 
+<body onload="init();" onunload='save();'> 
+    <g:background id="imgBackground" />
+    <div id="wrapper">
+    <img src="" alt="" id="img">
+    <span id="header"><img src="img/icon.png" alt="icon" class='ic'><p>Task list</p></span>
+    <form name="frm" id="frm" >
+    	<textarea name="text" id="list" onkeyup='save();'>here your tasks</textarea>
+    </form>
+   	
+	</div>
+</html>

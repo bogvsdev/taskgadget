@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+    <name>Tasks</name>
+    <namespace>Tasks</namespace>
+    <version>1.0</version>
+    <author name="Bogdan Vegun">
+	    <logo src="img/logo.png"/>		
+    </author>
+    <copyright>® 2013</copyright>
+    <description>Best task list ever</description>
+  <icons>
+    <icon height="130" width="130" src="img/icon.png"/>
+  </icons>
+    <hosts>
+        <host name="sidebar">
+          <autoscaleDPI>true</autoscaleDPI>
+		  <base type="html" apiVersion="1.0.0" src="gadget.html"/>
+		  <permissions>full</permissions>
+		  <platform minPlatformVersion="1.0"/>
+
+		  <defaultImage src="img/drag.png"/>
+        </host>
+    </hosts>
+</gadget>

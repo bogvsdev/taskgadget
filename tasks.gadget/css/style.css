@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+    width: 465px;
+    height: 231px;
+    font-family: 'Open Sans', Verdana;
+    font-weight: 200;
+    font-size: 20px;
+    scrollbar-face-color: #e58e0b;
+	scrollbar-highlight-color: #ffab26;
+	scrollbar-shadow-color: #ffab26;
+	scrollbar-3dlight-color: #ffab26;
+	scrollbar-arrow-color: #e58e0b;
+	scrollbar-track-color: #ffab26;
+	scrollbar-darkshadow-color: #ffab26;
+}
+#wrapper {
+	display: block;
+	position: absolute;
+	top: 9px;left:8px;
+	width: 450px;
+    height: 225px;
+    z-index: 2;
+    background: #ffab26;
+	overflow: hidden;
+	
+}
+#header {
+	position: absolute;
+	top: 15px;left:15px;
+	color: #fff;
+}
+#list {
+	display: block;
+	width: 435px;
+	height: 150px;
+	position: absolute;
+	top:70px;left:15px;
+	border: 0;
+	background: transparent;
+	font: 13px 'Open Sans', Verdana;
+	color: #fff;
+}
+.ic {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin-right: 5px;
+}
+#header p {
+	margin: 5px 0 0 10px;
+}
+#img {
+	width: 433px;
+	height: 225px;
+}
+.white {
+	scrollbar-face-color: #eee;
+	scrollbar-highlight-color: #fff;
+	scrollbar-shadow-color: #fff;
+	scrollbar-3dlight-color: #fff;
+	scrollbar-arrow-color: #eee;
+	scrollbar-track-color: #fff;
+	scrollbar-darkshadow-color: #fff;
+}
+.green {
+	scrollbar-face-color: #8cbc09;
+	scrollbar-highlight-color: #a4d815;
+	scrollbar-shadow-color: #a4d815;
+	scrollbar-3dlight-color: #a4d815;
+	scrollbar-arrow-color: #8cbc09;
+	scrollbar-track-color: #a4d815;
+	scrollbar-darkshadow-color: #a4d815;
+}
+.dark-gray {
+	scrollbar-face-color: #444440;
+	scrollbar-highlight-color: #2B2B28;
+	scrollbar-shadow-color: #2B2B28;
+	scrollbar-3dlight-color: #2B2B28;
+	scrollbar-arrow-color: #444440;
+	scrollbar-track-color: #2B2B28;
+	scrollbar-darkshadow-color: #2B2B28;
+}
+.orange {
+	scrollbar-face-color: #e58e0b;
+	scrollbar-highlight-color: #ffab26;
+	scrollbar-shadow-color: #ffab26;
+	scrollbar-3dlight-color: #ffab26;
+	scrollbar-arrow-color: #e58e0b;
+	scrollbar-track-color: #ffab26;
+	scrollbar-darkshadow-color: #ffab26;
+}
+.blue {
+	scrollbar-face-color: #2fa4ce;
+	scrollbar-highlight-color: #4dc0ea;
+	scrollbar-shadow-color: #4dc0ea;
+	scrollbar-3dlight-color: #4dc0ea;
+	scrollbar-arrow-color: #2fa4ce;
+	scrollbar-track-color: #4dc0ea;
+	scrollbar-darkshadow-color: #4dc0ea;
+}
+.red {
+	scrollbar-face-color: #ea6767;
+	scrollbar-highlight-color: #e24646;
+	scrollbar-shadow-color: #e24646;
+	scrollbar-3dlight-color: #e24646;
+	scrollbar-arrow-color: #ea6767;
+	scrollbar-track-color: #e24646;
+	scrollbar-darkshadow-color: #e24646;
+}

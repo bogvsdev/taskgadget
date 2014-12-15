@@ -1,0 +1,76 @@
+<html> 
+<head> 
+<title></title> 
+<style> 
+    body { width: 300px; height: 300px; margin: 0; font-size:10pt; font-family:'Open Sans', Verdana, Arial; }
+	td, select 	{ font-size:10pt; font-family:'Open Sans', Verdana, Arial; }
+</style>
+<script>
+	var path = System.Gadget.Settings.readString("imagen");
+	function getIndexFromValue(form,cvalue){
+		for(i=0;i<=form.options.length-1;i++) {
+			if(form.options[i].value==cvalue)
+				return i;				
+		}
+		return 0;
+	}
+	function initSettings()
+	{
+		System.Gadget.onSettingsClosing = settingsClosing;
+		setform.colores.selectedIndex = getIndexFromValue(setform.colores, System.Gadget.Settings.readString("color"));
+		setform.theme.selectedIndex = getIndexFromValue(setform.theme, System.Gadget.Settings.readString("theme"));
+	}
+	function settingsClosing(event)
+	{
+		if (event.closeAction == event.Action.commit)
+		{
+			System.Gadget.Settings.writeString("color", setform.colores.value);
+			System.Gadget.Settings.writeString("theme", setform.theme.value);
+			if(path.length>0)
+				System.Gadget.Settings.writeString("imagen", path);
+			else
+				System.Gadget.Settings.writeString("imagen", "");
+		}
+		event.cancel = false;
+	}
+	function abrir() {
+		oShellItem = System.Shell.chooseFile(
+		  true,
+		  "JPG:*.jpg:PNG:*.png",
+		  "",
+		  ""
+		)
+		path = oShellItem.path;
+	}
+	function clear() {
+		path = '';
+		usarimagen.checked = false;
+		System.Gadget.Settings.writeString("imagen", "");
+	}
+
+</script>
+</head>
+ 
+<body onLoad="initSettings();">
+<form name="setform" id="setform">
+	<a href="javascript: abrir()">Select image...</a>&nbsp;&nbsp;<a href="javascript: clear()">Clear</a>
+	<hr />
+    <label for="colores">Select text color</label>
+    <select name="colores" id="colores" >
+        <option value="#ffffff">White</option>
+	    <option value="#000000">Black</option> 
+	    <option value="#2B2B28">Dark Gray</option>
+    </select>
+    <hr />
+    <label for="theme">Select theme sample</label>
+    <select name="theme" id="theme" >
+        <option value="1">White</option>
+	    <option value="2">Green</option> 
+	    <option value="3">Dark Gray</option>
+	    <option value="4">Orange</option>
+	    <option value="5">Blue</option>
+	    <option value="6">Red</option>
+    </select>
+</form>
+</body>
+</html>
